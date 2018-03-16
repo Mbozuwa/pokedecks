@@ -4,7 +4,7 @@ class Pokemon {
 
 	public $name;
 	public $energyType;
-	public $hitpoints = ;
+	public $hitpoints;
 	public $attacks;
 	public $weakness;
 	public $resistance;
