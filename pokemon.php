@@ -17,5 +17,4 @@ public function __construct($name, $energyType, $hitpoints, $attacks, $weakness,
 	$this->attacks = $attacks;
 	$this->weakness = $weakness;
 	$this->resistance = $resistance;
-
 }
