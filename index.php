@@ -5,4 +5,4 @@ require 'attacks.php';
 require 'pikachu.php';
 require 'charmeleon.php';
 
-
+// require 'init.php';
