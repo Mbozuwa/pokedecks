@@ -1,12 +1,11 @@
 <?php 
+	
+class attack{
+	public $name;
+	public $damage;
 
-class attacks {
-	public $electricRing  = '50';
-	public $PikaPunch = '20';
-	public $HeadButt = '10';
-	public $Flare = '30';
-
-	public function __construct {
-		
+	public function __construct($myName, $myDamage){
+		$this->name = $myName;
+		$this->damage = $myDamage;
 	}
 }
