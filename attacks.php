@@ -5,4 +5,8 @@ class attacks {
 	public $PikaPunch = '20';
 	public $HeadButt = '10';
 	public $Flare = '30';
+
+	public function __construct {
+		
+	}
 }
