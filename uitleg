@@ -1,0 +1,23 @@
+class attack{
+	public $name;
+	public $damage;
+
+	public function __construct($myName, $myDamage){
+		$this->name = $myName;
+		$this->damage = $myDamage;
+	}
+
+
+-------------------------------------------------------------
+
+class pikachu extends pokemon {
+	
+	public function __constrct($name, $type) {
+
+	$team = 'pikachu'
+	$attacks = array
+		(new Attack(myName: 'attacknaam', myDamage: 80),
+		(new Attack(myName: 'attacknaam', myDamage: 80),
+	);
+	}
+}

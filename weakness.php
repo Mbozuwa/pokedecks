@@ -1,6 +1,6 @@
 <?php
 
-class weakness {
+class Weakness {
 	public $WeaknessType;
 	public $Devider;
 
@@ -8,4 +8,8 @@ class weakness {
 		$this->WeaknessType = $MyWeaknessType;
 		$this->Devider = $MyDevider;
 	}
+
+	public function __toString() {
+    	return json_encode($this);
+    }
 }

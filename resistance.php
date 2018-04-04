@@ -1,6 +1,6 @@
 <?php 
 
-class resistance {
+class Resistance {
 	public $resistanceType;
 	public $multiplier;
 
@@ -8,4 +8,8 @@ class resistance {
 		$this->resistanceType = $myresistanceType;
 		$this->multiplier = $myMultiplier;
 	}
+
+	public function __toString() {
+    	return json_encode($this);
+    }
 }

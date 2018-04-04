@@ -1,6 +1,6 @@
 <?php
 
-class pikachu extends pokemon {
+class Pikachu extends Pokemon {
 	public $name;
 	public $energyType = 'lightning';
 	public $hitpoints = '60';
@@ -10,12 +10,12 @@ class pikachu extends pokemon {
 	public $resistance;
 
 
-public function __construct($name) {
+	public function __construct($name) {
 
-	$this->name = $name;
-	$attacks = [new Attack('Electric Ring', 50), new Attack('Pike Punch', 20)];
-	$weakness = new weakness('fire', '1.5');
-	$resistance = new resistance('fighting, 20');
-	parent::__construct($name, $this->energyType, $this->hitpoints, $this->health, $attacks, $weakness, $resistance);
-}
+		$this->name = $name;
+		$attacks = [new Attack('Electric Ring', 50), new Attack('Pike Punch', 20)];
+		$weakness = new weakness('fire', '1.5');
+		$resistance = new resistance('fighting, 20');
+		parent::__construct($name, $this->energyType, $this->hitpoints, $this->health, $attacks, $weakness , $resistance);
+	}
 }

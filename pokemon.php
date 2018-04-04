@@ -27,7 +27,6 @@ class Pokemon {
 		echo '<h1>' . $this->name . ' - ' .  $this->hitpoints . 'Hitpoints' . '</h1>';
 	}
 
-
 // Do an attack on Charmeleon with attack
 
 	public function attack($target, $attack) {
@@ -35,6 +34,7 @@ class Pokemon {
 	}
 
 	public function defend($attack) {
+		
 	}
 
 }
