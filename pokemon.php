@@ -24,18 +24,17 @@ class Pokemon {
 	}
 
 	public function printHitpoints(){
-		echo '<h1>' . $this->name . '';
+		echo '<h1>' . $this->name . ' - ' .  $this->hitpoints . 'Hitpoints' . '</h1>';
 	}
 
 
 // Do an attack on Charmeleon with attack
 
-	public funtion attack($target, $attack) {
+	public function attack($target, $attack) {
 		$target->defend($this->energyType, $attacks);
 	}
 
 	public function defend($attack) {
-		$this->
 	}
 
 }

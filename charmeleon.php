@@ -1,21 +1,21 @@
 <?php
 
 class charmeleon extends pokemon {
-	public $name = 'charmeleon';
+	public $name;
 	public $energyType = 'fire';
 	public $hitpoints = '60';
-	public $attacks = ['Head Butt', 'Flare'];
-	public $weakness = 'water';
-	public $resistance = 'lightning';
+	public $health = '60';
+	public $attacks = [];
+	public $weakness;
+	public $resistance;
 
 
-public function __constrct($name) {
+	public function __construct($name) {
 
 	$this->name = $name;
-	$attacks = array
-		(new Attack(myName: 'Headbutt', myDamage: 10),
-		(new Attack(myName: 'Flare', myDamage: 30),
-	);
-	$weakness = new weakness("fire, 1.5");
-	$resistance = new resistance("fighting, 20");
+	$attacks = [new Attack('Headbutt', 10), new Attack('Flare', 30)];
+	$weakness = new weakness('water, 2');
+	$resistance = new resistance('lightning', '10');
+	parent::__construct($name, $this->energyType, $this->hitpoints, $this->health, $attacks, $weakness, $resistance);
+}	
 }

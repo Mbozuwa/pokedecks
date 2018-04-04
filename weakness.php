@@ -1,11 +1,11 @@
 <?php
 
 class weakness {
-	public $weaknessType;
-	public $devider;
+	public $WeaknessType;
+	public $Devider;
 
-	public function __construct($weaknessType, $myDevider){
-		$this->weaknessType = $MyweaknessType;
-		$this->devider = $myDevider;
+	public function __construct($WeaknessType, $Devider){
+		$this->WeaknessType = $MyWeaknessType;
+		$this->Devider = $MyDevider;
 	}
 }
