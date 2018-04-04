@@ -7,3 +7,4 @@ require 'charmeleon.php';
 require 'weakness.php';
 require 'resistance.php';
 
+print_r($pokemon);
