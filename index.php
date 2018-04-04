@@ -7,4 +7,5 @@ require 'charmeleon.php';
 require 'weakness.php';
 require 'resistance.php';
 
-print_r($pokemon);
+$pikachu = new pikachu("raichu");
+$charmeleon = new charmeleon("charizard");
