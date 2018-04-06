@@ -7,6 +7,6 @@ require 'charmeleon.php';
 require 'weakness.php';
 require 'resistance.php';
 
-$pikachu = new pikachu("raichu");
-$charmeleon = new charmeleon("charizard");
+$pikachu = new Pikachu("raichu");
+$charmeleon = new Charmeleon("charizard");
 
