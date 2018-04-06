@@ -9,4 +9,3 @@ require 'resistance.php';
 
 $pikachu = new Pikachu("raichu");
 $charmeleon = new Charmeleon("charizard");
-
