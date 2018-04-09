@@ -4,9 +4,9 @@ class Resistance {
 	public $resistanceType;
 	public $multiplier;
 
-	public function __construct($myResistanceType, $myMultiplier){
-		$this->resistanceType = $myResistanceType;
-		$this->multiplier = $myMultiplier;
+	public function __construct($ResistanceType, $Multiplier){
+		$this->resistanceType = $ResistanceType;
+		$this->multiplier = $Multiplier;
 	}
 
 	public function __toString() {

@@ -9,3 +9,20 @@ require 'resistance.php';
 
 $pikachu = new Pikachu("raichu");
 $charmeleon = new Charmeleon("charizard");
+
+$pikachu->printHitpoints();
+$charmeleon->printHitpoints();
+?>
+
+<p>Pikachu valt Charmeleon aan met een Electric Ring attack</p>
+
+<?php
+$pikachu->attack($charmeleon , "Electric Ring");
+$charmeleon->printHitpoints();
+?>
+
+<p>Charmeleon valt Pikachu aan met een Flare attack</p>
+<?php
+$charmeleon->attack($pikachu , "Flare");
+$pikachu->printHitpoints();
+
