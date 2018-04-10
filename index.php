@@ -15,15 +15,13 @@ $pikachu->printHitpoints();
 $charmeleon->printHitpoints();
 ?>
 
-<p>Pikachu valt Charmeleon aan met een Electric Ring attack</p>
 
 <?php
-$pikachu->attack($charmeleon , "Electric Ring");
+$pikachu->attack($charmeleon , 1);
 $charmeleon->printHitpoints();
 ?>
 
-<p>Charmeleon valt Pikachu aan met een Flare attack</p>
 <?php
-$charmeleon->attack($pikachu , "Flare");
+$charmeleon->attack($pikachu , 1);
 $pikachu->printHitpoints();
 
