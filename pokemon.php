@@ -28,26 +28,16 @@ class Pokemon {
 		echo '<h1>' . $this->name . ' - ' .  $this->hitpoints . 'Hitpoints' . '</h1>';
 	}
 
-// Do an attack on Charmeleon with attack
-
-	// public function attack($target, $attack) {
-	// 	$target->defend($this->energyType, $attacks);
-	// }
-
-	// public function defend($attack) {
-		
-	// }
-
 	public function attack($target, $att)
     {
         foreach ($this->attacks as $attack) {
             if ($attack->name == $att) {
                 $damage = $attack->damage;
-                if ($this->energyType == $target->resistance->energyType) {
-                    $damage = $damage - $target->resistance->worth;
+                if ($this->energyType == $target->resistance->resistanceType) {
+                    $damage = $damage - $target->resistance->multiplier;
                 }
-                if ($this->energyType == $target->weakness->energyType) {
-                    $damage = $damage * $target->weakness->multiplier;
+                if ($this->energyType == $target->weakness->weaknessType) {
+                    $damage = $damage * $target->weakness->devider;
                 }
                 $newHealth = $target->health - $damage;
                 $target->health = $newHealth;

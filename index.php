@@ -4,11 +4,12 @@ require 'pokemon.php';
 require 'attacks.php';
 require 'pikachu.php';
 require 'charmeleon.php';
+require 'energyType.php';
 require 'weakness.php';
 require 'resistance.php';
 
-$pikachu = new Pikachu("raichu");
-$charmeleon = new Charmeleon("charizard");
+$pikachu = new Pikachu("pikachu");
+$charmeleon = new Charmeleon("charmeleon");
 
 $pikachu->printHitpoints();
 $charmeleon->printHitpoints();
